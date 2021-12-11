@@ -26,7 +26,7 @@ php artisan vendor:publish --provider="Plugrbase\EnvBar\ServiceProvider"
 
 Once installed, you can access the settings in the control panel by clicking the "EnvBar" button.
 
-![settings](./docs/settings-form.png)
+![settings](./docs/settings-form.jpeg)
 
 ## Official Support
 
