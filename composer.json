@@ -16,7 +16,10 @@
     "extra": {
         "statamic": {
             "name": "Statamic environment bar",
-            "description": "Statamic environment bar addon"
+            "description": "Statamic environment bar addon",
+            "editions": [
+                "pro"
+            ]
         },
         "laravel": {
             "providers": [
