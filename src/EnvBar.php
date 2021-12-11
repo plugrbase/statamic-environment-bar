@@ -11,7 +11,7 @@ class EnvBar
      *
      * @var string
      */
-    protected $message = 'You are currently working in the :environment environment.';
+    protected $message = 'You are currently working in the <strong>:environment</strong> environment.';
 
     /**
      * The background color
