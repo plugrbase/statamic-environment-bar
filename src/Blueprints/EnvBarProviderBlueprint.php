@@ -16,7 +16,16 @@ class EnvBarProviderBlueprint
                             'handle' => 'envbar_local_enabled',
                             'field' => [
                                 'type' => 'toggle',
-                                'display' => 'Local Enabled',
+                                'display' => 'Enabled',
+                                'width' => 50,
+                            ],
+                        ],
+                        [
+                            'handle' => 'envbar_local_color',
+                            'field' => [
+                                'type' => 'color',
+                                'display' => 'Color',
+                                'width' => 50,
                             ],
                         ],
                         [
@@ -35,7 +44,16 @@ class EnvBarProviderBlueprint
                             'handle' => 'envbar_development_enabled',
                             'field' => [
                                 'type' => 'toggle',
-                                'display' => 'Development Enabled',
+                                'display' => 'Enabled',
+                                'width' => 50,
+                            ],
+                        ],
+                        [
+                            'handle' => 'envbar_development_color',
+                            'field' => [
+                                'type' => 'color',
+                                'display' => 'Color',
+                                'width' => 50,
                             ],
                         ],
                         [
@@ -54,7 +72,16 @@ class EnvBarProviderBlueprint
                             'handle' => 'envbar_staging_enabled',
                             'field' => [
                                 'type' => 'toggle',
-                                'display' => 'Staging Enabled',
+                                'display' => 'Enabled',
+                                'width' => 50,
+                            ],
+                        ],
+                        [
+                            'handle' => 'envbar_staging_color',
+                            'field' => [
+                                'type' => 'color',
+                                'display' => 'Color',
+                                'width' => 50,
                             ],
                         ],
                         [
@@ -73,7 +100,16 @@ class EnvBarProviderBlueprint
                             'handle' => 'envbar_production_enabled',
                             'field' => [
                                 'type' => 'toggle',
-                                'display' => 'Production Enabled',
+                                'display' => 'Enabled',
+                                'width' => 50,
+                            ],
+                        ],
+                        [
+                            'handle' => 'envbar_production_color',
+                            'field' => [
+                                'type' => 'color',
+                                'display' => 'Color',
+                                'width' => 50,
                             ],
                         ],
                         [

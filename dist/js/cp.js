@@ -21,6 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mixins: [Fieldtype],
   props: {
+    color: String,
     message: String
   },
   data: function data() {
@@ -28,21 +29,27 @@ __webpack_require__.r(__webpack_exports__);
   },
   created: function created() {},
   mounted: function mounted() {
+    var style = '';
+
+    if (this.color != '') {
+      style = 'style="background-color:' + this.color + ' !important;"';
+    }
+
     var envBarHtml = '<div class="p-0 m-0 w-full">';
-    envBarHtml += '<div class="py-1 px-1 text-sm w-full bg-grey-80 text-white text-right">';
+    envBarHtml += '<div class="py-1 px-1 text-sm w-full bg-grey-80 text-white text-right" ' + style + '>';
     envBarHtml += this.message;
-    envBarHtml += "</div>";
-    envBarHtml += "</div>";
-    var statamicWrapper = document.querySelector("#statamic");
-    statamicWrapper.classList.add("show-env-bar");
-    var wrapper = document.createElement("div");
+    envBarHtml += '</div>';
+    envBarHtml += '</div>';
+    var statamicWrapper = document.querySelector('#statamic');
+    statamicWrapper.classList.add('show-env-bar');
+    var wrapper = document.createElement('div');
     wrapper.innerHTML = envBarHtml;
-    wrapper.classList.add("w-full");
-    wrapper.classList.add("fixed");
-    wrapper.classList.add("z-1000");
-    var statamicGlobalHeader = document.querySelector(".global-header");
+    wrapper.classList.add('w-full');
+    wrapper.classList.add('fixed');
+    wrapper.classList.add('z-1000');
+    var statamicGlobalHeader = document.querySelector('.global-header');
     statamicGlobalHeader.parentNode.insertBefore(wrapper, statamicGlobalHeader);
-    statamicGlobalHeader.classList.remove("fixed");
+    statamicGlobalHeader.classList.remove('fixed');
     wrapper.appendChild(statamicGlobalHeader);
   },
   watch: {},
@@ -74,6 +81,7 @@ Statamic.booted(function () {
   if (Statamic.$config.get('plugrbase_env_bar_enabled')) {
     var component = Statamic.$root.$components.append('env-bar', {
       props: {
+        color: Statamic.$config.get('plugrbase_env_bar_color'),
         message: Statamic.$config.get('plugrbase_env_bar_message')
       }
     });

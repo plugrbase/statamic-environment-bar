@@ -16,12 +16,12 @@ return [
     ],
 
     /*
-    * The colos used for the environments.
+    * The colors used for the environments.
     */
     'color' => [
-        'local' => '#662244',
-        'development' => '#662244',
-        'staging' => '#662244',
-        'production' => '#662244',
+        'local' => '#8D21FD',
+        'development' => '#FA2DEC',
+        'staging' => '#B41EE3',
+        'production' => '#E31E73',
     ]
 ];

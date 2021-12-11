@@ -16,6 +16,7 @@ Statamic.booted(() => {
     if (Statamic.$config.get('plugrbase_env_bar_enabled')) {
         const component = Statamic.$root.$components.append('env-bar', {
             props: {
+                color: Statamic.$config.get('plugrbase_env_bar_color'),
                 message: Statamic.$config.get('plugrbase_env_bar_message')
             }
         });

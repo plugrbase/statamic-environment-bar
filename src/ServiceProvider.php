@@ -46,8 +46,10 @@ class ServiceProvider extends AddonServiceProvider
     protected function bootEnvBar()
     {
         $envBar = new EnvBar();
+        
         Statamic::provideToScript([
             'plugrbase_env_bar_enabled' => $envBar->isEnabled(),
+            'plugrbase_env_bar_color' => $envBar->getColor(),
             'plugrbase_env_bar_message' => $envBar->getMessage()
         ]);
     }
