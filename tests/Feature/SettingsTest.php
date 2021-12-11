@@ -10,15 +10,14 @@ class SettingsTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
-        $this->user = User::make();
-        $this->user->id(1)->email('test@plugrbase.com')->makeSuper();
-        $this->be($this->user);
-        AssetContainer::make('test')->disk('test')->save();
+        
+        $this->signInAdmin();
     }
 
     public function test_see_settings_form()
     {
-        //$response = $this->get(cp_route('plugrbase.envbar.settings.index'));
+        // @todo - check issue when checking route
+        // $this->get(cp_route('plugrbase.envbar.settings.index'))->assertOk();
         $this->assertTrue(true);
     }
 }
