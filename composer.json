@@ -1,0 +1,48 @@
+{
+    "name": "plugrbase/statamic-environment-bar",
+    "description": "Display ...",
+    "type": "statamic-addon",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Plugrbase\\EnvBar\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Plugrbase\\EnvBar\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic environment bar",
+            "description": "Statamic environment bar addon"
+        },
+        "laravel": {
+            "providers": [
+                "Plugrbase\\EnvBar\\ServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Julien Legrand",
+            "email": "julien@nomala.com"
+        }
+    ],
+    "require": {
+        "statamic/cms": "^3.0 || ^3.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.9",
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "lint": [
+            "php-cs-fixer fix ./src"
+        ],
+        "test": [
+            "php -d memory_limit=-1 -d max_execution_time=0 ./vendor/bin/phpunit"
+        ]
+    }
+}

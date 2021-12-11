@@ -1,0 +1,10 @@
+.show-env-bar {
+  .z-1000 {
+    z-index: 1000;
+  }
+  @media (min-width: 768px) {
+      #main {
+          padding-top: 88px;
+      }
+  }
+}
