@@ -6,11 +6,11 @@
 
 <!-- /statamic:hide -->
 
-This addons adds an environment bar to the control panel so thet you know what environment you're woking. You can change the colors, texts ann enable / disable the bar per environment. 
+This addons adds an environment bar to the control panel so thet you know what in which environment you are woking. You can change the colors, texts ann enable / disable the bar per environment. 
 
 # Installation
 
-You can search for this addon in the `Tools > Addons` section of the Statamic control panel and click **install**, or run the following command from your project root:
+You can install the package via composer:
 
 ```bash
 composer require plugrbase/statamic-environment-bar
