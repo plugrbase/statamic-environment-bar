@@ -6,7 +6,7 @@
 
 <!-- /statamic:hide -->
 
-xxx.
+This addons adds an environment bar to the control panel so thet you know what environment you're woking. You can change the colors, texts ann enable / disable the bar per environment. 
 
 # Installation
 
@@ -22,15 +22,15 @@ Optionally publish the config file of this package:
 php artisan vendor:publish --provider="Plugrbase\EnvBar\ServiceProvider"
 ```
 
-Add an environment variable. Provide the Google API key that you want to use for this project.
+# Control Panel
 
-```
-GOOGLE_MAPS_API_KEY=""
-```
+Once installed, you can access the settings in the control panel by clicking the "EnvBar" button.
+
+![settings](./docs/settings-form.png)
 
 ## Official Support
 
-If you're in need of some help, [send an email to](mailto:hello@plugrbase.com)!
+If you're in need of some help, drop an email to [hello@plugrbase.com](mailto:hello@plugrbase.com)!
 
 # License
 
