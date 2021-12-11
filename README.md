@@ -6,7 +6,7 @@
 
 <!-- /statamic:hide -->
 
-This addons adds an environment bar to the control panel so thet you know what in which environment you are woking. You can change the colors, texts ann enable / disable the bar per environment. 
+This addons adds an environment bar to the control panel so that you know your working environment. You can change the colors, texts ann enable / disable the bar per environment. 
 
 # Installation
 
