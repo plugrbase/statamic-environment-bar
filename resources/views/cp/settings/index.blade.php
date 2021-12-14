@@ -1,5 +1,5 @@
 @extends('statamic::layout')
-@section('title', 'Socialize Settings')
+@section('title', 'Environment Bar Settings')
 
 @section('content')
     <publish-form
