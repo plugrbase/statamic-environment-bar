@@ -2,9 +2,12 @@
   .z-1000 {
     z-index: 1000;
   }
+  .live-preview {
+    top: 88px;
+  }
   @media (min-width: 768px) {
-      #main {
-          padding-top: 88px;
-      }
+    #main {
+      padding-top: 88px;
+    }
   }
 }
