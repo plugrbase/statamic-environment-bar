@@ -34,4 +34,4 @@ If you're in need of some help, drop an email to [hello@plugrbase.com](mailto:he
 
 # License
 
-This addon is a commercial addon - you **must purchase a license** via the [Statamic Marketplace]([https://statamic.com/addons/double-three-digital/simple-commerce](https://statamic.com/addons/plugrbase/envbar)) to use it in a production environment.
+This addon is a commercial addon - you **must purchase a license** via the [Statamic Marketplace]([https://statamic.com/addons/plugrbase/envbar](https://statamic.com/addons/plugrbase/envbar)) to use it in a production environment.
